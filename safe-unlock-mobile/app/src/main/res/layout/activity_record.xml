@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/mylayout"
+    tools:context=".RecordActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/violet"
+        android:id="@+id/l2">
+
+        <ImageView
+            android:id="@+id/backMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/baseline_arrow_back_ios_new_24"></ImageView>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Historique d'application"
+            android:textSize="24sp"
+            android:layout_toRightOf="@id/backMain"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            ></TextView>
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listview"
+        android:layout_below="@id/l2"
+        ></ListView>
+
+    <!--
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_search_24rose"
+        android:id="@+id/recherche"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="30dp"
+        ></ImageView>
+    -->
+<!--
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bleu">
+
+        <Button
+            android:id="@+id/backMain"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/baseline_arrow_back_ios_new_24"
+            android:layout_centerVertical="true"
+            >
+        </Button>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Historique d'application"
+            android:textSize="30sp"
+            android:layout_toRightOf="@id/backMain"
+            ></TextView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/historique"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:hint="résultat"
+        android:layout_weight="1"
+        ></TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bleu">
+
+        <Button
+            android:id="@+id/recherche"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/baseline_search_24"
+            android:layout_centerHorizontal="true"
+            ></Button>
+    </RelativeLayout>
+
+-->
+</RelativeLayout>
